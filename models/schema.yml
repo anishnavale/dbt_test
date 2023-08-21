@@ -80,3 +80,12 @@ models:
         description: Amount of the order (AUD) paid for by gift card
         tests:
           - not_null
+
+  - name: metricflow_time_spine
+    description: This table is a date dimension
+
+    columns:
+      - name: date_day
+        tests:
+          - not_null
+        description: This is a unique identifier for an order
